@@ -1,0 +1,37 @@
+/*
+  count = 0;
+  for (var i=_inside; i<_sweep; i+=_magic) {
+    var temp = ((i*_rate) > 0) ? Math.pow((_rate*i), _divergence) : -Math.pow((-_rate*i), _divergence);
+  
+    var init_x = (count > 9) ? temp*Math.cos(i-9) : 0
+    var init_y = (count > 9) ? temp*Math.sin(i-9) : 0
+  
+    var dot:Dot = new Dot(count, init_x, init_y, temp*Math.cos(i), temp*Math.sin(i), _num_seeds);
+    this.addChild(dot);
+    count++
+  }
+*/
+
+
+
+/*    var _magic = 137.50776 // super-duper magic number
+    var _rate = 18/100 // base spiral expansion rate (default 18/360)
+    var _divergence = .6 // exponent - 1.0 is linear, 0.5 is best
+    var _sweep = 100000 // total number of degrees in spiral (default: 160000)
+    var _inside = 10 * _magic // size of hole in middle
+    var _num_seeds = Math.floor(_sweep/_magic);*/
+
+
+
+
+
+
+
+    /*      
+    graphics.beginFill(0x000000);
+    var w = _diameter;
+    var h = _diameter;//2+_diameter*_percentile/2;
+    graphics.drawRoundRect(-w/2, -h/2, w, h, w*.5+w*.5*_percentile, w*.5+w*.5*_percentile)
+    graphics.endFill();
+    rotation = angle_from_center_when_home()
+    */
