@@ -1,0 +1,1 @@
+﻿package {	import flash.display.MovieClip;	public class Tile extends MovieClip {		function Tile(init_x:Number=0, init_y:Number=0) {      x = init_x      y = init_y    }	}	}
