@@ -1,0 +1,1 @@
+﻿package com.brandseduction {  	import flash.display.MovieClip;	public class FooterTile extends MovieClip {	  	  var _x_init;	  var _y_init;	  		function FooterTile(x_init:Number=0, y_init:Number=0) {			alpha = 1;      x = _x_init = x_init      y = _y_init = y_init    }    	}	}

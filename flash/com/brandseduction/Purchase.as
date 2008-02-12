@@ -1,0 +1,1 @@
+﻿package com.brandseduction {    import flash.display.*;	import flash.filters.*;	import caurina.transitions.Tweener;		public class Purchase extends MovieClip {	  		function Purchase() {		}				public function init() {      			y = stage.stageHeight - height + 2;			x = stage.stageWidth + 100;		}					}	}
