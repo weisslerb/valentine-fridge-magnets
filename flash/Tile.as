@@ -1,1 +1,1 @@
-﻿package {	import flash.display.MovieClip;	public class Tile extends MovieClip {		function Tile(init_x:Number=0, init_y:Number=0) {      x = init_x      y = init_y    }	}	}
+﻿package com.brandseduction {  	import flash.display.MovieClip;	public class Tiler extends MovieClip {	  	  var _x_init;	  var _y_init;	  		function Tiler(x_init:Number=0, y_init:Number=0) {      x = _x_init = x_init      y = _y_init = y_init    }    	}	}
