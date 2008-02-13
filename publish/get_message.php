@@ -11,14 +11,16 @@
 	$query = "SELECT * from messages WHERE msg_id='$msg_id' LIMIT 1";
 	$result = mysql_query($query);
 	$num_results = mysql_num_rows($result);
+
 	if ($num_results < 1) {
-		$query = "SELECT * from messages WHERE msg_id='1' LIMIT 1";
+		$query = "SELECT * from messages WHERE msg_id='3' LIMIT 1";
 		$result = mysql_query($query);
 	}
+	
 	while ($row = mysql_fetch_assoc($result)) {
 		$words = stripslashes($row["words"]);
-		$words_init_x = stripslashes($row["words_init_x"]);
-		$words_init_y = stripslashes($row["words_init_y"]);
+		$words_x_init = stripslashes($row["words_x_init"]);
+		$words_y_init = stripslashes($row["words_y_init"]);
 		$words_x = stripslashes($row["words_x"]);
 		$words_y = stripslashes($row["words_y"]);
 		$words_depth = stripslashes($row["words_depth"]);
@@ -26,8 +28,8 @@
 	//
 	if ($result) {
 		echo "words=" . urlencode($words);
-		echo "&words_init_x=" . urlencode($words_init_x);
-		echo "&words_init_y=" . urlencode($words_init_y);
+		echo "&words_x_init=" . urlencode($words_x_init);
+		echo "&words_y_init=" . urlencode($words_y_init);
 		echo "&words_x=" . urlencode($words_x);
 		echo "&words_y=" . urlencode($words_y);
 		echo "&words_depth=" . urlencode($words_depth);

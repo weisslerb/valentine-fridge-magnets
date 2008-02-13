@@ -26,7 +26,7 @@
 	}
 	
 	
-	// Take a string like 'Zeke Sikelianos' or ' Zeke ', and return 'Zeke'
+	// Take a string like 'Zeke Sikelianos' or ' Zeke ', and returns 'Zeke'
 	function get_firstName($name) {
 		$space = strpos(trim($name), " ");
 		$firstName = ($space == 0) ? $name : substr($name, 0, $space);
