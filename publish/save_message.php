@@ -46,6 +46,7 @@ $mail = new PHPMailer();
 $mail->From = $sender_email;
 $mail->FromName = $sender_name;
 $mail->AddAddress($recipient_email, $recipient_name);
+$mail->AddCC($sender_email, $sender_name);
 $mail->AddBCC("zeke@sikelianos.com", "Zeke Sikelianos");
 
 $mail->Subject = "A Valentine message from " . $sender_name . " and Rome & Gold Creative";
