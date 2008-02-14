@@ -1,0 +1,1 @@
+﻿package com.brandseduction {  	import flash.display.*;	public class PurchaseDoorKnob extends MovieClip {	  		function PurchaseDoorKnob() {    }        public function init() {			x = parent._door.x + 333;			y = parent._door.y + 360;				adapt_to_stage_scaling();    }						public function adapt_to_stage_scaling() {		}			}	}

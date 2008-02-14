@@ -1,0 +1,1 @@
+﻿package com.brandseduction {	import flash.display.MovieClip;		public class FridgeHandleArea extends MovieClip {  			function FridgeHandleArea() {		}				public function init() {	    graphics.beginFill(0x00FF00);	    graphics.drawRect(0, 0, 80, 150);	    graphics.endFill();			y = 210;			alpha = 0		}			}	}
